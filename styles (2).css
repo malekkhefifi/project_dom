@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    padding-top: 15px;
+    background-color: bisque;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+
+}
+
+.header navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.header ul {
+    list-style: none;
+    display: flex;
+    align-items: center
+}
+
+.header ul li {
+    margin: 0 120px;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.header a :hover {
+    color: red;
+    background-color: transparent;
+}
+
+.header a::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: red;
+    -webkit-transition: ;
+    transition: 0.2s all;
+    transition: 0.2s all;
+}
+
+.header a:hover::after {
+    width: 100%;
+}
+
+/****************hero section*/
+.hero {
+    background-image: url(img.webp);
+    background-size: cover;
+    background-position: center;
+    padding: 450px;
+    text-align: center;
+    color: rgb(193, 19, 42);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/**************product list*/
+.product-list {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+
+
+
+
+.product {
+    max-width: 213px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    border: 3px solid rgb(154, 147, 147);
+}
+
+.product:hover {
+    border-color: rgb(253, 11, 11);
+}
+
+.product img {
+    width: 100%;
+}
+
+.product_info {
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.product_info h2,
+.product_info h4 {
+    margin-bottom: 10px;
+}
+
+.product_info h2 {
+    color: rgb(61, 15, 247);
+}
+
+.product_info h4 {
+    color: red;
+}
+.quantity-control {
+    display: flex;
+    align-items: center;
+}
+button {
+    margin: 0 37px;
+    padding: 5px;
+}
+input {
+    width: 20px;
+    
+}
+
+
+
+
+.product_icons i {
+    margin: 0 10px;
+    cursor: pointer;
+}
+.heart {
+    font-size: 30px;
+    color: gray;
+    cursor: pointer;
+}
+.liked {
+    color: red;
+}
+.product_icons i:hover {
+    color: rgb(223, 7, 7);
+}
+
+.product_icons::before {
+    content: "";
+    display: block;
+    width: 80%;
+    height:2px;
+    background-color: rgb(133, 126, 126);
+    margin: 0 auto 10px;
+}
+/*********************footer*/
+.footer{
+    background-color: bisque;
+    text-align: center;
+    padding: 30px 0;
+    
+}
